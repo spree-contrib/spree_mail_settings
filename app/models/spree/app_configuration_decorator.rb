@@ -13,5 +13,10 @@ module Spree
     preference :mail_auth_type, :string, :default => Core::MailSettings::MAIL_AUTH[0]
     preference :smtp_username, :string
     preference :smtp_password, :string
+
+    def override_actionmailer_config
+      raise "override_actionmailer_config has been removed. actionmailer's config is always overwridden when spree_mail_settings is included"
+    end
+    alias_method :override_actionmailer_config=, :override_actionmailer_config
   end
 end
