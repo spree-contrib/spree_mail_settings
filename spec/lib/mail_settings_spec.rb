@@ -3,24 +3,6 @@ require 'spec_helper'
 module Spree
   module Core
     describe MailSettings do
-      context "override option is true" do
-        before { Config.override_actionmailer_config = true }
-
-        it "calls override!" do
-          ActionMailer::Base.should_receive(:delivery_method=).with(:spree)
-          MailSettings.init
-        end
-      end
-
-      context "override option is false" do
-        before { Config.override_actionmailer_config = false }
-
-        it "doesnt calls override!" do
-          MailSettings.should_not_receive(:override!)
-          MailSettings.init
-        end
-      end
-
       describe "mail_server_settings" do
         subject{ described_class.new.mail_server_settings }
         context "authentication method is none" do

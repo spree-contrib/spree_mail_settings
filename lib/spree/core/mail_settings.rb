@@ -8,14 +8,6 @@ module Spree
       # This makes it possible to configure the mail settings through an admin
       # interface instead of requiring changes to the Rails envrionment file
       def self.init
-        override! if override?
-      end
-
-      def self.override?
-        Config.override_actionmailer_config
-      end
-
-      def self.override!
         ActionMailer::Base.delivery_method = :spree
         ActionMailer::Base.default_url_options[:host] ||= Config.site_url
       end
