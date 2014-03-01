@@ -1,6 +1,6 @@
 # Run Coverage report
 require 'simplecov'
-SimpleCov.start do
+SimpleCov.start 'rails' do
   add_filter 'spec/dummy'
   add_group 'Controllers', 'app/controllers'
   add_group 'Helpers', 'app/helpers'
