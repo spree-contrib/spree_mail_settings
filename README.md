@@ -1,7 +1,7 @@
 SpreeMailSettings
 =================
 
-[![Build Status](https://travis-ci.org/spree-community/spree_mail_settings.png?branch=master)](https://travis-ci.org/spree-community/spree_mail_settings)
+[![Build Status](https://travis-ci.org/spree-contrib/spree_mail_settings.png?branch=master)](https://travis-ci.org/spree-contrib/spree_mail_settings)
 
 Installation
 ------------
