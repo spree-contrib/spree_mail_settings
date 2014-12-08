@@ -11,7 +11,7 @@ module Spree
           Spree::Config[name] = value
         end
 
-        flash[:success] = Spree.t(:successfully_updated, :resource => Spree.t(:mail_methods_test_mail))
+        flash[:success] = Spree.t(:successfully_updated, :resource => Spree.t(:mail_methods))
         redirect_to edit_admin_mail_method_url
       end
 
