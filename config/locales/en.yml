@@ -3,7 +3,7 @@
 
 en:
   spree:
-    mail_methods:
+    mail_methods_test_mail:
       send_testmail: Send Test Mail
       testmail:
         delivery_error: Test Mail delivery error
