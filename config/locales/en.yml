@@ -3,14 +3,14 @@
 
 en:
   spree:
-    mail_methods:
+    mail_methods_test_mail:
       send_testmail: Send Test Mail
       testmail:
         delivery_error: Test Mail delivery error
         delivery_success: Test Mail sent successfully
         error: ! 'Test Mail error: %{e}'
-    mail_method_settings: Mail Method Settings
     mail_methods: Mail Methods
+    mail_method_settings: Mail Method Settings
     mail_settings:
       auth:
         none: "None"
