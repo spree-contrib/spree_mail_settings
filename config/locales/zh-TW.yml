@@ -1,0 +1,19 @@
+---
+zh-TW:
+  spree:
+    mail_methods:
+      send_testmail: 寄送測試郵件
+      testmail:
+        delivery_error: 測試郵件遞送錯誤
+        delivery_success: 測試郵件寄送成功
+        error: ! '測試郵件錯誤: %{e}'
+    mail_method_settings: 郵件方式設定
+    smtp: SMTP
+    smtp_authentication_type: SMTP 認證方式
+    smtp_domain: SMTP 網域
+    smtp_mail_host: SMTP Mail 主機
+    smtp_password: SMTP 密碼
+    smtp_port: SMTP 埠口
+    smtp_send_all_emails_as_from_following_address: 使用以下的信箱位址來寄送所有郵件.
+    smtp_send_copy_to_this_addresses: 對所有寄出的郵件另送一份副本到這個位址. 若有多個位址, 請用逗號分隔.
+    smtp_username: SMTP 使用者名稱

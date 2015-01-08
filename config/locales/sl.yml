@@ -1,0 +1,19 @@
+---
+sl:
+  spree:
+    mail_methods:
+      send_testmail:
+      testmail:
+        delivery_error:
+        delivery_success:
+        error:
+    mail_method_settings:
+    smtp: SMTP
+    smtp_authentication_type: SMTP način avtentikacije
+    smtp_domain: SMTP domena
+    smtp_mail_host: SMTP strežnik
+    smtp_password: SMTP geslo
+    smtp_port: SMTP port
+    smtp_send_all_emails_as_from_following_address: Pošiljaj vse emaile s sledečega email naslova.
+    smtp_send_copy_to_this_addresses: Pošlji kopijo emailov naročil na sledeče email naslove(ločene z vejico).
+    smtp_username: SMTP Uporabniško ime

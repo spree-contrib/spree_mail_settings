@@ -1,0 +1,19 @@
+---
+da:
+  spree:
+    mail_methods:
+      send_testmail: Send test-e-mail
+      testmail:
+        delivery_error: Fejl ved aflevering af test-e-mail
+        delivery_success: Test-e-mail afsendt
+        error: ! 'Test-e-mail fejl: %{e}'
+    mail_method_settings: E-mail indstillinger
+    smtp: SMTP
+    smtp_authentication_type: SMTP-autoriseringstype
+    smtp_domain: SMTP-domæne
+    smtp_mail_host: SMTP-server
+    smtp_password: SMTP-adgangskode
+    smtp_port: SMTP-port
+    smtp_send_all_emails_as_from_following_address: Send alle emails fra følgende adresser.
+    smtp_send_copy_to_this_addresses: Send en kopi af alle udgående emails til denne adresse. For flere adresser, adskil med komma.
+    smtp_username: SMTP-brugernavn

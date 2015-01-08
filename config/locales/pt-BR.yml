@@ -1,0 +1,19 @@
+---
+pt-BR:
+  spree:
+    mail_methods:
+      send_testmail: Enviar Email de Teste
+      testmail:
+        delivery_error: Erro de envio do Email de Teste
+        delivery_success: Email de Teste enviado com sucesso
+        error: ! 'Erro no Email de Teste: %{e}'
+    mail_method_settings: Configurações de email
+    smtp: SMTP
+    smtp_authentication_type: Tipo de autenticação SMTP
+    smtp_domain: Domínio SMTP
+    smtp_mail_host: Servidor de email SMTP
+    smtp_password: Senha SMTP
+    smtp_port: Porta SMTP
+    smtp_send_all_emails_as_from_following_address: Enviar todos emails deste endereço.
+    smtp_send_copy_to_this_addresses: Enviar cópia de todos emails para estes endereços. separar por vírgulas ou espaços
+    smtp_username: Usuário SMTP

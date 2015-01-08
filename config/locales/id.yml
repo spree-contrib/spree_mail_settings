@@ -1,0 +1,19 @@
+---
+id:
+  spree:
+    mail_methods:
+      send_testmail: Kirim Testmail
+      testmail:
+        delivery_error: Error pengiriman Testmail
+        delivery_success: Sukses pengiriman Testmail
+        error: ! 'Testmail error: %{e}'
+    mail_method_settings: Pengaturan Metode Surat
+    smtp: SMTP
+    smtp_authentication_type: Type d'authentification SMTP
+    smtp_domain: Domaine SMTP
+    smtp_mail_host: Serveur de messagerie
+    smtp_password: Mot de passe SMTP
+    smtp_port: Port SMTP
+    smtp_send_all_emails_as_from_following_address: Envoyer tous les mails à partir de l'adresse suivante.
+    smtp_send_copy_to_this_addresses: Envoyer une copie de tous les courriels à cette adresse. Pour plusieurs adresses, séparer par une virgule.
+    smtp_username: Identifiant SMTP

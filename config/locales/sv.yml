@@ -1,0 +1,19 @@
+---
+sv:
+  spree:
+    mail_methods:
+      send_testmail: Skicka testmejl
+      testmail:
+        delivery_error: Testmejl sändarfel
+        delivery_success: Testmejl framgångsrikt skickat
+        error: ! 'Testmejl fel: %{e}'
+    mail_method_settings: E-post inställningar
+    smtp: SMTP
+    smtp_authentication_type: SMTP-autentiseringstyp
+    smtp_domain: SMTP-domän
+    smtp_mail_host: SMTP-server
+    smtp_password: SMTP-lösenord
+    smtp_port: SMTP-port
+    smtp_send_all_emails_as_from_following_address: Skicka all e-post från följande adress.
+    smtp_send_copy_to_this_addresses: Skicka en kopia av all utgående e-post till denna adress. För flera adresser, separera med komma.
+    smtp_username: SMTP-användarnamn

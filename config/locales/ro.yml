@@ -1,0 +1,19 @@
+---
+ro:
+  spree:
+    mail_methods:
+      send_testmail: Trimite email de test
+      testmail:
+        delivery_error: Eroare trimitere email de test
+        delivery_success: Email de test trimis cu succes
+        error: ! 'Eroare email de test: %{e}'
+    mail_method_settings: Setări metode email
+    smtp: SMTP
+    smtp_authentication_type: Tip de autentificare SMTP
+    smtp_domain: Domeniu SMTP
+    smtp_mail_host: Host Email SMTP
+    smtp_password: Parolă SMTP
+    smtp_port: Port SMTP
+    smtp_send_all_emails_as_from_following_address: Trimite toate emailurile ca și cum ar pleca de pe adresa aceasta.
+    smtp_send_copy_to_this_addresses: Trimite o copie a tuturor mailurilor trimise către adresa aceasta. Pentru adrese multiple, separă cu virgulă.
+    smtp_username: Nume utilizator SMTP

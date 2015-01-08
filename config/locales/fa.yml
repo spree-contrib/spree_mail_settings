@@ -1,0 +1,19 @@
+---
+fa:
+  spree:
+    mail_methods:
+      send_testmail: ارسال ایمیل تست
+      testmail:
+        delivery_error: مشکلی در ارسال ایمیل تست بوجود آمده‌است
+        delivery_success: ایمیل تست با موفقیت ارسال شد.
+        error:
+    mail_method_settings:
+    smtp:
+    smtp_authentication_type:
+    smtp_domain:
+    smtp_mail_host:
+    smtp_password:
+    smtp_port:
+    smtp_send_all_emails_as_from_following_address: تمام نامه‌ها را از آدرس ذیل ارسال کن
+    smtp_send_copy_to_this_addresses:
+    smtp_username:

@@ -1,0 +1,19 @@
+---
+et:
+  spree:
+    mail_methods:
+      send_testmail:
+      testmail:
+        delivery_error:
+        delivery_success:
+        error:
+    mail_method_settings:
+    smtp: SMTP
+    smtp_authentication_type: SMTP autentimise tüüp
+    smtp_domain: SMTP domeen
+    smtp_mail_host: SMTP serveri aadress
+    smtp_password: SMTP salasõna
+    smtp_port: SMTP port
+    smtp_send_all_emails_as_from_following_address: Saada kõik e-mailid järgnevalt aadressilt
+    smtp_send_copy_to_this_addresses: Saada kõikide väljuvate e-mailide koopia järgnevale aadressile. Rohkem kui ühe adressaadi puhul eralda aadressid komaga.
+    smtp_username: SMTP kasutajanimi
