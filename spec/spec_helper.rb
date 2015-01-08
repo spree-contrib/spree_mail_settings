@@ -19,10 +19,15 @@ require 'rspec/rails'
 require 'ffaker'
 
 RSpec.configure do |config|
-  config.mock_with :rspec
-  config.use_transactional_fixtures = false
+  config.fail_fast = false
+  config.filter_run focus: true
+  config.run_all_when_everything_filtered = true
+  config.raise_errors_for_deprecations!
   config.infer_spec_type_from_file_location!
-  config.treat_symbols_as_metadata_keys_with_true_values = true
+
+  config.expect_with :rspec do |expectations|
+    expectations.syntax = :expect
+  end
 end
 
 Dir[File.join(File.dirname(__FILE__), 'support/**/*.rb')].each { |file| require file }
