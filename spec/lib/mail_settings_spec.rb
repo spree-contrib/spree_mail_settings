@@ -14,13 +14,13 @@ module Spree
             Config.secure_connection_type = "TLS"
           end
 
-          it { subject[:address].should == "smtp.example.com" }
-          it { subject[:domain].should == "example.com" }
-          it { subject[:port].should == 123 }
-          it { subject[:authentication].should == "None" }
-          it { subject[:enable_starttls_auto].should be_true }
-          it { should_not have_key(:user_name) }
-          it { should_not have_key(:password) }
+          it { expect(subject[:address]).to eq "smtp.example.com" }
+          it { expect(subject[:domain]).to eq "example.com" }
+          it { expect(subject[:port]).to eq 123 }
+          it { expect(subject[:authentication]).to eq "None" }
+          it { expect(subject[:enable_starttls_auto]).to be(true) }
+          it { is_expected.not_to have_key(:user_name) }
+          it { is_expected.not_to have_key(:password) }
         end
 
         context "when mail_auth_type is other than none" do
@@ -31,8 +31,8 @@ module Spree
           end
 
           context "overrides user credentials" do
-            it { subject[:user_name].should == "schof" }
-            it { subject[:password].should == "hellospree!" }
+            it { expect(subject[:user_name]).to eq "schof" }
+            it { expect(subject[:password]).to eq "hellospree!" }
           end
         end
       end

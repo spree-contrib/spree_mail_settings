@@ -26,7 +26,7 @@ module Spree
       end
       describe "mailer uses custom settings" do
         subject { mail_method.mailer.settings }
-        it { should == MailSettings.new.mail_server_settings }
+        it { is_expected.to eq MailSettings.new.mail_server_settings }
       end
     end
   end
