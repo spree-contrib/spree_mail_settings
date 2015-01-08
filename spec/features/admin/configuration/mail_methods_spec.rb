@@ -3,7 +3,6 @@ describe "Mail Methods" do
 
   before do
     visit spree.admin_path
-    click_link "Configuration"
   end
 
   context "edit" do
