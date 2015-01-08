@@ -13,12 +13,13 @@ Add spree_mail_settings to your `Gemfile`:
 gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings', branch: '2-2-stable'
 ```
 
-Bundle your dependencies and run the installation generator:
+Run:
 
 ```shell
 bundle
-bundle exec rails g spree_mail_settings:install
 ```
+
+That's it!
 
 ---
 
