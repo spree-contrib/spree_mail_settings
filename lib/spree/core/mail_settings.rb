@@ -23,6 +23,7 @@ module Spree
       end
 
       private
+
       def user_credentials
         { :user_name => Config.smtp_username,
           :password => Config.smtp_password }

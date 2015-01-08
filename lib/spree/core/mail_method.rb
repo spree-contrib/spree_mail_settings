@@ -1,7 +1,7 @@
 module Spree
   module Core
     class MailMethod
-      def initialize(options={})
+      def initialize(options = {})
       end
 
       def deliver!(mail)
@@ -15,6 +15,7 @@ module Spree
       end
 
       private
+
       def mailer_class
         Rails.env.test?? Mail::TestMailer : Mail::SMTP
       end
