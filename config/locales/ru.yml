@@ -1,0 +1,19 @@
+---
+ru:
+  spree:
+    mail_methods:
+      send_testmail: Отправить тестовое письмо
+      testmail:
+        delivery_error: Ошибка отправки тестового письма
+        delivery_success: Тестовое письмо успешно отправлено
+        error: ! 'Ошибка отправки тестового письма: %{e}'
+    mail_method_settings: Настройки способов доставки почты
+    smtp: SMTP
+    smtp_authentication_type: Тип SMTP аутентификации
+    smtp_domain: ! 'Домен SMTP '
+    smtp_mail_host: Адрес сервера SMTP
+    smtp_password: Пароль
+    smtp_port: Порт
+    smtp_send_all_emails_as_from_following_address: Отправлять все сообщения от этого адреса.
+    smtp_send_copy_to_this_addresses: Отправлять копии всех сообщений на этот адрес. Для использования нескольких адресов разделите их запятой.
+    smtp_username: Пользователь

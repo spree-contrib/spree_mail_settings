@@ -1,0 +1,19 @@
+---
+nb:
+  spree:
+    mail_methods:
+      send_testmail:
+      testmail:
+        delivery_error:
+        delivery_success:
+        error:
+    mail_method_settings:
+    smtp: SMTP
+    smtp_authentication_type: SMTP autentisering
+    smtp_domain: SMTP domene
+    smtp_mail_host: SMTP server
+    smtp_password: SMTP passord
+    smtp_port: SMTP portnummer
+    smtp_send_all_emails_as_from_following_address:
+    smtp_send_copy_to_this_addresses:
+    smtp_username: SMTP brukernavn

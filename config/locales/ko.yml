@@ -1,0 +1,19 @@
+---
+ko:
+  spree:
+    mail_methods:
+      send_testmail:
+      testmail:
+        delivery_error:
+        delivery_success:
+        error:
+    mail_method_settings:
+    smtp: SMTP
+    smtp_authentication_type: SMTP 인증 방법
+    smtp_domain: SMTP 도메인
+    smtp_mail_host: SMTP 메일 호스트
+    smtp_password: SMTP 비밀번호
+    smtp_port: SMTP 포트
+    smtp_send_all_emails_as_from_following_address: 다음 주소로 모든 메일을 보냅니다.
+    smtp_send_copy_to_this_addresses:
+    smtp_username: SMTP 사용자이름

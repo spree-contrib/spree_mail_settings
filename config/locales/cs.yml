@@ -1,0 +1,19 @@
+---
+cs:
+  spree:
+    mail_methods:
+      send_testmail: Odeslat testovací email
+      testmail:
+        delivery_error: Při zasílání testovacího emailu došlo k chybě
+        delivery_success: Testovací email úspěšně odeslán
+        error: ! 'Chyba při odesílání testovacího emailu: %{e}'
+    mail_method_settings: Nastavení emailových metod
+    smtp: SMTP
+    smtp_authentication_type: Typ autentizace na serveru SMTP
+    smtp_domain: SMTP doména
+    smtp_mail_host: SMTP host
+    smtp_password: SMTP heslo
+    smtp_port: SMTP port
+    smtp_send_all_emails_as_from_following_address: Použít u všech odeslaných emailů následující emailovou adresu odesílatele (From).
+    smtp_send_copy_to_this_addresses: Posílat kopie všech odchozích emailů na následující emailovou adresu. Při použití více adres oddělte emaily čárkou.
+    smtp_username: SMTP uživatelské jméno

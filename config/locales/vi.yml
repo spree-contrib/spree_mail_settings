@@ -1,0 +1,19 @@
+---
+vi:
+  spree:
+    mail_methods:
+      send_testmail:
+      testmail:
+        delivery_error:
+        delivery_success:
+        error:
+    mail_method_settings: Cấu hình cách thức gủi thư
+    smtp: SMTP
+    smtp_authentication_type: Loại chứng thực SMTP
+    smtp_domain: Tên miền SMTP
+    smtp_mail_host: Tên host SMTP Mail
+    smtp_password: Mật khẩu SMTP
+    smtp_port: Cổng SMTP
+    smtp_send_all_emails_as_from_following_address: Gửi tất cả thư từ địa chỉ sau.
+    smtp_send_copy_to_this_addresses: Gửi một bản sao của tất cả thư gửi vào địa chỉ sau. Nếu có muốn dùng nhiều địa chỉ, dùng dấu phẩy để ngăn từng địa chỉ ra.
+    smtp_username: Tên đăng nhập SMTP
