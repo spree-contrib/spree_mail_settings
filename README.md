@@ -1,15 +1,16 @@
-SpreeMailSettings
-=================
+# Spree Mail Settings
 
-[![Build Status](https://travis-ci.org/spree-contrib/spree_mail_settings.png?branch=master)](https://travis-ci.org/spree-contrib/spree_mail_settings)
+[![Build Status](https://travis-ci.org/spree-contrib/spree_mail_settings.svg?branch=master)](https://travis-ci.org/spree-contrib/spree_mail_settings)
+[![Code Climate](https://codeclimate.com/github/spree-contrib/spree_mail_settings/badges/gpa.svg)](https://codeclimate.com/github/spree-contrib/spree_mail_settings)
 
-Installation
-------------
+---
 
-Add spree_mail_settings to your Gemfile:
+## Installation
+
+Add spree_mail_settings to your `Gemfile`:
 
 ```ruby
-gem 'spree_mail_settings'
+gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings', branch: '2-2-stable'
 ```
 
 Bundle your dependencies and run the installation generator:
@@ -19,8 +20,9 @@ bundle
 bundle exec rails g spree_mail_settings:install
 ```
 
-Testing
--------
+---
+
+## Testing
 
 Be sure to bundle your dependencies and then create a dummy test app for the specs to run against.
 
@@ -30,11 +32,19 @@ bundle exec rake test_app
 bundle exec rspec spec
 ```
 
-When testing your applications integration with this extension you may use it's factories.
-Simply add this require statement to your spec_helper:
+---
 
-```ruby
-require 'spree_mail_settings/factories'
-```
+## Contributing
 
-Copyright (c) 2014 [name of extension creator], released under the New BSD License
+See corresponding [guidelines][4]
+
+---
+
+## License
+
+Copyright (c) 2014-2015 [John Hawthorn][1] and [contributors][2], released under the [New BSD License][3]
+
+[1]: https://github.com/jhawthorn
+[2]: https://github.com/spree-contrib/spree_mail_settings/graphs/contributors
+[3]: https://github.com/spree-contrib/spree_mail_settings/tree/master/LICENSE.md
+[4]: https://github.com/spree-contrib/spree_mail_settings/tree/master/CONTRIBUTING.md
