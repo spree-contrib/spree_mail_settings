@@ -1,7 +1,7 @@
 # We'll use the OrderMailer as a quick and easy way to test. IF it works here
 # it works for all email (in theory.)
 describe Spree::OrderMailer do
-  let(:order) { Spree::Order.new(:email => "customer@example.com") }
+  let(:order) { Spree::Order.new(email: "customer@example.com") }
   let(:message) { Spree::OrderMailer.confirm_email(order) }
 
   before(:all) do

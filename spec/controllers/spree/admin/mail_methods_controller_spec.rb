@@ -3,14 +3,14 @@ describe Spree::Admin::MailMethodsController do
 
   context "#update" do
     it "should reinitialize the mail settings" do
-      spree_put :update, { :enable_mail_delivery => "1", :mails_from => "spree@example.com" }
+      spree_put :update, { enable_mail_delivery: "1", mails_from: "spree@example.com" }
       response.should be_redirect
     end
   end
 
   it "can trigger testmail" do
     user = create(:user, email: 'user@spree.com')
-    controller.stub(:try_spree_current_user => user)
+    controller.stub(try_spree_current_user: user)
     Spree::Config[:enable_mail_delivery] = "1"
 
     expect {

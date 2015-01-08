@@ -1,6 +1,6 @@
 module Spree
   module Admin
-    class MailMethodsController < Spree::Admin::BaseController
+    class MailMethodsController < BaseController
       def update
         if params[:smtp_password].blank?
           params.delete(:smtp_password)
@@ -11,7 +11,7 @@ module Spree
           Spree::Config[name] = value
         end
 
-        flash[:success] = Spree.t(:successfully_updated, :resource => Spree.t(:mail_methods))
+        flash[:success] = Spree.t(:successfully_updated, resource: Spree.t(:mail_methods))
         redirect_to edit_admin_mail_method_url
       end
 
@@ -22,7 +22,7 @@ module Spree
           flash[:error] = Spree.t('admin.mail_methods.testmail.delivery_error')
         end
       rescue Exception => e
-        flash[:error] = Spree.t('admin.mail_methods.testmail.error') % {:e => e}
+        flash[:error] = Spree.t('admin.mail_methods.testmail.error') % { e: e }
       ensure
         redirect_to edit_admin_mail_method_url
       end

@@ -12,7 +12,7 @@ describe "Mail Methods" do
     end
 
     it "should be able to edit mail method settings" do
-      fill_in "mail_bcc", :with => "spree@example.com99"
+      fill_in "mail_bcc", with: "spree@example.com99"
       click_button "Update"
       page.should have_content("successfully updated!")
     end
