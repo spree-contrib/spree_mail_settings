@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe Spree::Admin::MailMethodsController do
   stub_authorization!
 

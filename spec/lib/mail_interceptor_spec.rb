@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 # We'll use the OrderMailer as a quick and easy way to test. IF it works here
 # it works for all email (in theory.)
 describe Spree::OrderMailer do

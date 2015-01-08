@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe "Mail Methods" do
   stub_authorization!
 
