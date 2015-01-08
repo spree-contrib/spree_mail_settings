@@ -1,0 +1,19 @@
+---
+zh-CN:
+  spree:
+    mail_methods:
+      send_testmail: 发送测试邮件
+      testmail:
+        delivery_error: 测试邮件发送失败
+        delivery_success: 测试邮件发送成功
+        error: ! '测试邮件错误: %{e}'
+    mail_method_settings: 邮件方式设置
+    smtp: SMTP
+    smtp_authentication_type: SMTP认证类型
+    smtp_domain: SMTP域名
+    smtp_mail_host: SMTP邮件服务器
+    smtp_password: SMTP密码
+    smtp_port: SMTP端口
+    smtp_send_all_emails_as_from_following_address: 所有邮件都从以下地址发出.
+    smtp_send_copy_to_this_addresses: 向如下地址发送一份所有发出邮件的副本。多个邮件地址之间以逗号隔开。
+    smtp_username: SMTP用户名

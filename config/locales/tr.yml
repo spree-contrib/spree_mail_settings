@@ -1,0 +1,19 @@
+---
+tr:
+  spree:
+    mail_methods:
+      send_testmail: Deneme Postası Gönder
+      testmail:
+        delivery_error: Deneme Postası iletim hatası
+        delivery_success: Deneme Postası başaırla gönderlidi
+        error: ! 'Deneme Postası hatası: %{e}'
+    mail_method_settings: Posta Yöntemi Ayarları
+    smtp: SMTP
+    smtp_authentication_type: SMTP Kimlik Doğrulama Tipi
+    smtp_domain: SMTP Etki Alanı
+    smtp_mail_host: SMTP Posta Sunucusu
+    smtp_password: SMTP Şifresi
+    smtp_port: SMTP Portu
+    smtp_send_all_emails_as_from_following_address: Tüm postaları aşağıdaki adresten gidiyor gibi gönder
+    smtp_send_copy_to_this_addresses: Dışarı giden tüm postaların birer kopyasını bu adrese de gönder. Birden çok adres kullacaksanız virgülle ayırın.
+    smtp_username: SMTP Kullanıcı Adı

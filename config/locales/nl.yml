@@ -1,0 +1,19 @@
+---
+nl:
+  spree:
+    mail_methods:
+      send_testmail: Verstuur test e-mail
+      testmail:
+        delivery_error: Probleem met het afleveren van de testmail
+        delivery_success: Testmail succesvol verstuurd
+        error: ! 'Testmail fout: %{e}'
+    mail_method_settings: E-mail instellingen
+    smtp: SMTP
+    smtp_authentication_type: SMTP autorisatie type
+    smtp_domain: SMTP domein
+    smtp_mail_host: SMTP mail host
+    smtp_password: SMTP wachtwoord
+    smtp_port: SMTP poort
+    smtp_send_all_emails_as_from_following_address: Verstuur alle e-mails vanaf het volgende e-mailadres.
+    smtp_send_copy_to_this_addresses: Stuur een kopie van alle uitgaande e-mails naar het volgende adres. Scheid meerdere adressen met een komma.
+    smtp_username: SMTP Gebruikersnaam

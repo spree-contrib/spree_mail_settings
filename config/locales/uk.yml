@@ -1,0 +1,19 @@
+---
+uk:
+  spree:
+    mail_methods:
+      send_testmail:
+      testmail:
+        delivery_error:
+        delivery_success:
+        error:
+    mail_method_settings:
+    smtp: SMTP
+    smtp_authentication_type: Тип SMTP аутентифікації
+    smtp_domain: Домен SMTP
+    smtp_mail_host: Адреса сервера SMTP
+    smtp_password: Пароль SMTP
+    smtp_port: Порт SMTP
+    smtp_send_all_emails_as_from_following_address: Надсилати усі повідомлення з цієї адреси.
+    smtp_send_copy_to_this_addresses: Надсилати копії всіх повідомлень на цю адресу. Для використання кількох адрес розділіть їх комою.
+    smtp_username: Користувач

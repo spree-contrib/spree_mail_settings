@@ -1,0 +1,19 @@
+---
+th:
+  spree:
+    mail_methods:
+      send_testmail: ส่งอีเมลทดสอบ
+      testmail:
+        delivery_error: อีเมลทดสอบไม่สามารถส่งได้
+        delivery_success: สามารถส่งอีเมลทดสอบได้
+        error: ! 'เกิดข้อผิดพลาดที่: %{e}'
+    mail_method_settings: ตั้งค่าการส่งอีเมล
+    smtp:
+    smtp_authentication_type:
+    smtp_domain:
+    smtp_mail_host:
+    smtp_password:
+    smtp_port:
+    smtp_send_all_emails_as_from_following_address: ส่งทุกอีเมลจากที่อยู่อีเมลดังกล่าว
+    smtp_send_copy_to_this_addresses: ทำสำเนาทุกฉบับสำหรับอีเมลขาออกไปยังอีเมลนี้ หากต้องการส่งสำเนาและส่งมากกว่านึงบัญชี ให้ใส่ comma
+    smtp_username:

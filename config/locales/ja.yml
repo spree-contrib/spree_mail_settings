@@ -1,0 +1,19 @@
+---
+ja:
+  spree:
+    mail_methods:
+      send_testmail: テストメール送信
+      testmail:
+        delivery_error: テストメール送信エラー
+        delivery_success: テストメールが正しく送信されました。
+        error: ! 'テストメールエラー: %{e}'
+    mail_method_settings:
+    smtp: SMTP
+    smtp_authentication_type: SMTP認証の種類
+    smtp_domain: SMTPドメイン
+    smtp_mail_host: SMTPサーバ
+    smtp_password: SMTPパスワード
+    smtp_port: SMTPポート
+    smtp_send_all_emails_as_from_following_address: 全てのメールの送信アドレスをこれに設定
+    smtp_send_copy_to_this_addresses: 全てのメールをコピーしこのアドレスに送信する。複数のアドレスを設定する場合はコンマ「,」で区切って下さい。
+    smtp_username: SMTPユーザ名

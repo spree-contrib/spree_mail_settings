@@ -1,0 +1,19 @@
+---
+ca:
+  spree:
+    mail_methods:
+      send_testmail:
+      testmail:
+        delivery_error:
+        delivery_success:
+        error:
+    mail_method_settings:
+    smtp: SMTP
+    smtp_authentication_type: Tipus d'autenticació SMTP
+    smtp_domain: Domini SMTP
+    smtp_mail_host:
+    smtp_password: Contrasenya SMTP
+    smtp_port: Port SMTP
+    smtp_send_all_emails_as_from_following_address: Envia tots els emails des de la següent adreça
+    smtp_send_copy_to_this_addresses: Envia una còpia dels emails sortints a aquesta adreça. Per posar diversos emails, separi'ls per comes.
+    smtp_username: Nom d'usuari SMTP

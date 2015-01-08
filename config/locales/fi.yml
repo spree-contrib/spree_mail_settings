@@ -1,0 +1,19 @@
+---
+fi:
+  spree:
+    mail_methods:
+      send_testmail: Lähetä testiviesti
+      testmail:
+        delivery_error: Virhe testiviestin toimituksessa
+        delivery_success: Testiviestin lähetys onnistui
+        error: ! 'Virhe testiviestissä: %{e}'
+    mail_method_settings: Sähköpostiasetukset
+    smtp: SMTP
+    smtp_authentication_type: SMTP todennustyyppi
+    smtp_domain: SMTP verkkotunnus
+    smtp_mail_host: SMTP palvelin
+    smtp_password: SMTP salasana
+    smtp_port: SMTP portti
+    smtp_send_all_emails_as_from_following_address: Käytetään seuraavaa osoitetta sähköpostien lähettäjänä.
+    smtp_send_copy_to_this_addresses: Lähetä kopio kaikista lähtevistä viesteistä tähän osoitteeseen. Erottele osoitteet pilkulla.
+    smtp_username: SMTP käyttäjänimi
