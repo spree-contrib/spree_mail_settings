@@ -1,8 +1,13 @@
 # encoding: UTF-8
+lib = File.expand_path('../lib/', __FILE__)
+$LOAD_PATH.unshift lib unless $LOAD_PATH.include?(lib)
+
+require 'spree_mail_settings/version'
+
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_mail_settings'
-  s.version     = '2.2.0'
+  s.version     = SpreeMailSettings.version
   s.summary     = 'Mail setting functionality extracted from Spree Commerce'
   s.description = s.summary
   s.required_ruby_version = '>= 1.9.3'
