@@ -14,7 +14,7 @@ module Spree
       end
 
       def testmail
-        if TestMailer.test_email(try_spree_current_user.id).deliver
+        if TestMailer.test_email(try_spree_current_user.id).deliver_now
           flash[:success] = Spree.t('mail_methods.testmail.delivery_success')
         else
           flash[:error] = Spree.t('mail_methods.testmail.delivery_error')
