@@ -1,17 +1,30 @@
 # Contributing
 
-Spree Mail Settings is an open source project and we encourage contributions. Please see the [contributors guidelines](http://spreecommerce.com/documentation/contributing_to_spree.html) before contributing.
+Spree Mail Settings is an open source project and we encourage contributions. Please see the [contributors guidelines](http://spreecommerce.com/documentation/contributing_to_spree.html) for more information before contributing.
+
+In the spirit of [free software][1], **everyone** is encouraged to help improve this project.
+
+Here are some ways *you* can contribute:
+
+* by using prerelease versions
+* by reporting [bugs][2]
+* by suggesting new features
+* by writing [translations][3]
+* by writing or editing documentation
+* by writing specifications
+* by writing code (*no patch is too small*: fix typos, add comments, clean up inconsistent whitespace)
+* by refactoring code
+* by resolving [issues][2]
+* by reviewing patches
+
+---
 
 ## Filing an issue
 
 When filing an issue on this extension, please first do these things:
 
 * Verify you can reproduce this issue in a brand new application.
-* Include the `httplog` in that application's `Gemfile`.
 * Run through the steps to reproduce the issue again.
-* Create a `Gist` which contains the complete output from the server during the course of these transactions.
-
-This information will help us replicate what's going wrong on the PayPal side of things.
 
 In the issue itself please provide:
 
@@ -24,7 +37,7 @@ In the issue itself please provide:
 
 In 99% of cases, this information is enough to determine the cause and solution to the problem that is being described.
 
-Any issue that is open for 14 days without actionable information or activity will be marked as "stalled" and then closed. Stalled issues can be re-opened if the information requested is provided.
+---
 
 ## Pull requests
 
@@ -40,7 +53,7 @@ Here's a quick guide:
 
 4. Push to your fork and submit a pull request. If the changes will apply cleanly to the latest stable branches and master branch, you will only need to submit one pull request.
 
-At this point you're waiting on us. We like to at least comment on, if not accept, pull requests within three business days (and, typically, one business day). We may suggest some changes or improvements or alternatives.
+At this point you're waiting on us. We may suggest some changes or improvements or alternatives.
 
 Some things that will increase the chance that your pull request is accepted, taken straight from the Ruby on Rails guide:
 
@@ -48,16 +61,21 @@ Some things that will increase the chance that your pull request is accepted, ta
 * Include tests that fail without your code, and pass with it.
 * Update the documentation, the surrounding one, examples elsewhere, guides, whatever is affected by your contribution.
 
-Syntax:
+---
 
-* Two spaces, no tabs.
-* No trailing whitespace. Blank lines should not have any space.
-* Prefer &&/|| over and/or.
-* `MyClass.my_method(my_arg)` not `my_method( my_arg )` or `my_method my_arg`.
-* `a = b` and not `a=b`.
-* `a_method { |block| ... }` and not `a_method { | block | ... }`
-* Follow the conventions you see used in the source already.
-* -> symbol over lambda
-* Ruby 1.9 hash syntax over Ruby 1.8 hash syntax
+## TL;DR
 
-And in case we didn't emphasize it enough: we love tests!
+* Fork the repo
+* Clone your repo
+* Run `bundle install`
+* Run `bundle exec rake test_app` to create the test application in `spec/dummy`
+* Make your changes
+* Ensure specs pass by running `bundle exec rspec spec`
+* Ensure all syntax ok by running `rubocop .`
+* Submit your pull request
+
+And in case we didn't emphasize it enough: **we love tests!**
+
+[1]: http://www.fsf.org/licensing/essays/free-sw.html
+[2]: https://github.com/spree-contrib/spree_mail_settings/issues
+[3]: https://github.com/spree-contrib/spree_mail_settings/tree/master/config/locales
