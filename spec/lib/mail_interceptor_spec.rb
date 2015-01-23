@@ -2,7 +2,7 @@
 # it works for all email (in theory.)
 describe Spree::OrderMailer do
   let(:order) { Spree::Order.new(email: "customer@example.com") }
-  let(:message) { Spree::OrderMailer.confirm_email(order) }
+  let(:message) { described_class.confirm_email(order) }
 
   before(:all) do
     ActionMailer::Base.perform_deliveries = true

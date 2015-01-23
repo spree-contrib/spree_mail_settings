@@ -1,7 +1,7 @@
 module Spree
   module Core
     describe MailMethod do
-      let(:mail_method){ described_class.new }
+      let(:mail_method) { described_class.new }
       let(:mail) do
         Mail.new do
           from 'spree@example.com'
