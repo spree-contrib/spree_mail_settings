@@ -1,13 +1,11 @@
 module Spree
   module Core
     class MailMethod
-      def initialize(options = {})
+      def initialize(*)
       end
 
       def deliver!(mail)
-        if Config.enable_mail_delivery
-          mailer.deliver!(mail)
-        end
+        mailer.deliver!(mail) if Config.enable_mail_delivery
       end
 
       def mailer
@@ -17,7 +15,7 @@ module Spree
       private
 
       def mailer_class
-        Rails.env.test?? Mail::TestMailer : Mail::SMTP
+        Rails.env.test? ? Mail::TestMailer : Mail::SMTP
       end
 
       def mail_server_settings

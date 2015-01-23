@@ -3,7 +3,7 @@ describe Spree::Admin::MailMethodsController, type: :controller do
 
   context "#update" do
     it "should reinitialize the mail settings" do
-      spree_put :update, { enable_mail_delivery: "1", mails_from: "spree@example.com" }
+      spree_put :update, enable_mail_delivery: "1", mails_from: "spree@example.com"
       expect(response).to be_redirect
     end
   end
