@@ -1,6 +1,7 @@
 module Spree
   AppConfiguration.class_eval do
     # Default mail headers settings
+    preference :mails_from, :string, default: 'spree@example.com'
     preference :enable_mail_delivery, :boolean, default: false
     preference :mail_bcc, :string, default: 'spree@example.com'
     preference :intercept_email, :string, default: nil
