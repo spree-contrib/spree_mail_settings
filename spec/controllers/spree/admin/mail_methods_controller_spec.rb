@@ -1,9 +1,11 @@
 describe Spree::Admin::MailMethodsController, type: :controller do
   stub_authorization!
 
+  let!(:store) { create(:store) }
+
   context "#update" do
     it "should reinitialize the mail settings" do
-      spree_put :update, enable_mail_delivery: "1", mails_from: "spree@example.com"
+      spree_put :update, enable_mail_delivery: "1"
       expect(response).to be_redirect
     end
   end
