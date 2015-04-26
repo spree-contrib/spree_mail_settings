@@ -1,6 +1,7 @@
 # We'll use the OrderMailer as a quick and easy way to test. IF it works here
 # it works for all email (in theory.)
 describe Spree::OrderMailer do
+  let!(:store) { create(:store) }
   let(:order) { Spree::Order.new(email: "customer@example.com") }
   let(:message) { described_class.confirm_email(order) }
 
@@ -12,18 +13,17 @@ describe Spree::OrderMailer do
   context "#deliver" do
     before do
       ActionMailer::Base.delivery_method = :test
+      Spree::Config[:intercept_email] = ''
     end
 
     after { ActionMailer::Base.deliveries.clear }
 
-    it "should use the from address specified in the preference" do
-      Spree::Config[:mails_from] = "no-reply@foobar.com"
+    it "should use the from address specified in the store preference" do
       deliver message
-      expect(@email.from).to match_array ["no-reply@foobar.com"]
+      expect(@email.from).to match_array [store.mail_from_address]
     end
 
     it "should use the provided from address" do
-      Spree::Config[:mails_from] = "preference@foobar.com"
       message.from = "override@foobar.com"
       message.to = "test@test.com"
       deliver message
