@@ -16,7 +16,8 @@ module Spree
     preference :smtp_password, :string
 
     def override_actionmailer_config
-      raise "override_actionmailer_config has been removed. actionmailer's config is always overwridden when spree_mail_settings is included"
+      raise 'override_actionmailer_config has been removed. ' \
+            'actionmailer\'s config is always overwridden when spree_mail_settings is included'
     end
     alias_method :override_actionmailer_config=, :override_actionmailer_config
   end
