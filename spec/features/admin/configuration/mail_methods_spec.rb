@@ -1,26 +1,26 @@
-describe "Mail Methods" do
+RSpec.feature 'Mail Methods' do
   stub_authorization!
 
-  before do
+  background do
     visit spree.admin_path
   end
 
-  context "edit" do
-    before do
-      click_link "Mail Method Settings"
+  context 'edit' do
+    background do
+      click_link 'Mail Method Settings'
     end
 
-    it "should be able to edit mail method settings" do
-      fill_in "mail_bcc", with: "spree@example.com99"
-      click_button "Update"
-      expect(page).to have_content("successfully updated!")
+    scenario 'can edit mail method settings' do
+      fill_in 'mail_bcc', with: 'spree@example.com99'
+      click_button 'Update'
+      expect(page).to have_content('successfully updated!')
     end
 
     # Regression test for #2094
-    it "does not clear password if not provided" do
-      Spree::Config[:smtp_password] = "haxme"
-      click_button "Update"
-      expect(page).to have_content("successfully updated!")
+    scenario 'does not clear password if not provided' do
+      Spree::Config[:smtp_password] = 'haxme'
+      click_button 'Update'
+      expect(page).to have_content('successfully updated!')
       expect(Spree::Config[:smtp_password]).not_to be_blank
     end
   end
