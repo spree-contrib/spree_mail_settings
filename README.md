@@ -23,18 +23,6 @@ That's it!
 
 ---
 
-## Testing
-
-Be sure to bundle your dependencies and then create a dummy test app for the specs to run against.
-
-```shell
-bundle
-bundle exec rake test_app
-bundle exec rspec spec
-```
-
----
-
 ## Contributing
 
 See corresponding [guidelines][4]
