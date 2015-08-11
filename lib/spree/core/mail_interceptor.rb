@@ -13,7 +13,12 @@ module Spree
 
         if Config[:mail_bcc].present?
           if message.bcc.present?
-            original_bcc = message.bcc.split(',').map(&:strip)
+            if message.bcc.respond_to?(:each)
+              original_bcc = message.bcc
+            else
+              original_bcc = message.bcc.split(',').map(&:strip)
+            end
+            
             prefered_bcc = Config[:mail_bcc].split(',').map(&:strip)
             message.bcc = (original_bcc | prefered_bcc).join(', ')
           else
