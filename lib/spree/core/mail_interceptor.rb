@@ -18,7 +18,7 @@ module Spree
             else
               original_bcc = message.bcc.split(',').map(&:strip)
             end
-            
+
             prefered_bcc = Config[:mail_bcc].split(',').map(&:strip)
             message.bcc = (original_bcc | prefered_bcc).join(', ')
           else
