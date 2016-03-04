@@ -2,7 +2,7 @@ module Spree
   module Admin
     class MailMethodsController < BaseController
       def update
-        params.delete(:smtp_password) if params[:smtp_password].blank?
+        params[:smtp_password] = nil if params[:smtp_username].blank?
 
         params.each do |name, value|
           next unless Spree::Config.has_preference? name

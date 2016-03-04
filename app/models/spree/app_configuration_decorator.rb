@@ -12,8 +12,8 @@ module Spree
     preference :mail_port, :integer, default: 25
     preference :secure_connection_type, :string, default: Core::MailSettings::SECURE_CONNECTION_TYPES[0]
     preference :mail_auth_type, :string, default: Core::MailSettings::MAIL_AUTH[0]
-    preference :smtp_username, :string
-    preference :smtp_password, :string
+    preference :smtp_username, :string, default: nil
+    preference :smtp_password, :string, default: nil
 
     def override_actionmailer_config
       raise 'override_actionmailer_config has been removed. ' \
