@@ -12,6 +12,7 @@ RSpec.describe Spree::OrderMailer do
 
   context '#deliver' do
     before do
+      store.send(:clear_cache)
       ActionMailer::Base.delivery_method = :test
       Spree::Config[:intercept_email] = ''
     end
