@@ -1,8 +1,8 @@
 module Spree
   module Core
     class MailSettings
-      MAIL_AUTH = %w(None plain login cram_md5)
-      SECURE_CONNECTION_TYPES = %w(None SSL TLS)
+      MAIL_AUTH = %w(None plain login cram_md5).freeze
+      SECURE_CONNECTION_TYPES = %w(None SSL TLS).freeze
 
       # Override the Rails application mail settings based on preferences
       # This makes it possible to configure the mail settings through an admin
@@ -22,11 +22,15 @@ module Spree
         settings.merge enable_starttls_auto: secure_connection?
       end
 
-      private
+      class << self
+        private
 
-      def self.preferred_delivery_method
-        Rails.application.config.action_mailer.delivery_method || :spree
+        def preferred_delivery_method
+          Rails.application.config.action_mailer.delivery_method || :spree
+        end
       end
+
+      private
 
       def user_credentials
         {

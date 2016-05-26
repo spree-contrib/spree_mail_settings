@@ -11,9 +11,7 @@ RSpec.describe Spree::Core::MailMethod do
     before { Spree::Config[:enable_mail_delivery] = true }
 
     it 'delivers the mail' do
-      expect {
-        mail_method.deliver!(mail)
-      }.to change { ActionMailer::Base.deliveries.size }.by(1)
+      expect { mail_method.deliver!(mail) }.to change { ActionMailer::Base.deliveries.size }.by(1)
     end
   end
 
@@ -21,9 +19,7 @@ RSpec.describe Spree::Core::MailMethod do
     before { Spree::Config[:enable_mail_delivery] = false }
 
     it 'does not deliver the mail' do
-      expect {
-        mail_method.deliver!(mail)
-      }.not_to change { ActionMailer::Base.deliveries.size }
+      expect { mail_method.deliver!(mail) }.not_to change { ActionMailer::Base.deliveries.size }
     end
   end
 
