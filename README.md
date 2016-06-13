@@ -7,19 +7,22 @@
 
 ## Installation
 
-Add spree_mail_settings to your `Gemfile`:
+1. Add this extension to your Gemfile with this line:
+  ```ruby
+  gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings', branch: 'X-X-stable'
+  ```
 
-```ruby
-gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings', branch: 'master'
-```
+  The `branch` option is important: it must match the version of Spree you're using.
+  For example, use `3-0-stable` if you're using Spree `3-0-stable` or any `3.0.x` version.
 
-Run:
+2. Install the gem using Bundler:
+  ```ruby
+  bundle install
+  ```
 
-```shell
-bundle
-```
+3. Restart your server
 
-That's it!
+  If your server was running, restart it so that it can find the assets properly.
 
 ---
 
