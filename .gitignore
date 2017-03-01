@@ -16,3 +16,4 @@ spec/dummy
 .ruby-gemset
 /.bundle/
 /vendor/bundle
+gemfiles/*.gemfile.lock
