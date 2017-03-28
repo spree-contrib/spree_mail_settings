@@ -22,17 +22,22 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_runtime_dependency 'spree_backend', '>= 3.1.0', '< 4.0'
+  spree_version = '>= 3.1.0', '< 4.0'
+  s.add_runtime_dependency 'spree_backend', spree_version
+  s.add_runtime_dependency 'spree_auth_devise', spree_version
 
-  s.add_development_dependency 'capybara', '~> 2.4'
+  s.add_development_dependency 'capybara'
   s.add_development_dependency 'coffee-rails'
   s.add_development_dependency 'database_cleaner'
-  s.add_development_dependency 'factory_girl', '~> 4.2'
+  s.add_development_dependency 'factory_girl'
   s.add_development_dependency 'ffaker'
-  s.add_development_dependency 'rspec-rails', '~> 3.4.0'
-  s.add_development_dependency 'sass-rails', '~> 5.0.0'
+  s.add_development_dependency 'rspec-rails'
+  s.add_development_dependency 'sass-rails'
   s.add_development_dependency 'simplecov'
   s.add_development_dependency 'sqlite3'
   s.add_development_dependency 'pry-rails'
-  s.add_development_dependency 'rubocop', '>= 0.24.1'
+  s.add_development_dependency 'rubocop'
+  s.add_development_dependency 'appraisal'
+  s.add_development_dependency 'pg'
+  s.add_development_dependency 'mysql2'
 end
