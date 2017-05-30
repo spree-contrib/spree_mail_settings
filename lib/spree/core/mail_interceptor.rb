@@ -13,7 +13,20 @@ module Spree
           message.to = Config[:intercept_email]
         end
 
-        message.bcc ||= Config[:mail_bcc] if Config[:mail_bcc].present?
+        if Config[:mail_bcc].present?
+          if message.bcc.present?
+            if message.bcc.respond_to?(:each)
+              original_bcc = message.bcc
+            else
+              original_bcc = message.bcc.split(',').map(&:strip)
+            end
+
+            prefered_bcc = Config[:mail_bcc].split(',').map(&:strip)
+            message.bcc = (original_bcc | prefered_bcc).join(', ')
+          else
+            message.bcc = Config[:mail_bcc]
+          end
+        end
       end
     end
   end
