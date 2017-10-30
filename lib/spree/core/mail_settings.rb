@@ -20,11 +20,10 @@ module Spree
                    end
 
         if secure_connection?
-          settings.merge({
-                          enable_starttls_auto: true,
-                          tls: true
-                          })
+          settings[:enable_starttls_auto] = true
+          settings[:tls] = true
         end
+        settings
       end
 
       class << self
