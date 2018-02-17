@@ -21,7 +21,7 @@ module Spree
 
         if secure_connection?
           settings[:enable_starttls_auto] = true
-          settings[:tls] = true
+          settings[:tls] = (!Config.mail_host.include? "gmail")
         end
         settings
       end
