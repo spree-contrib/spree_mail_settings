@@ -2,7 +2,7 @@ module Spree
   module Core
     describe MailSettings do
       describe "mail_server_settings" do
-        subject{ described_class.new.mail_server_settings }
+        subject { described_class.new.mail_server_settings }
         context "authentication method is none" do
           before do
             Config.mail_host = "smtp.example.com"

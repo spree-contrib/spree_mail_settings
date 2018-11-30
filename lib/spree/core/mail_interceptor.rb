@@ -11,9 +11,7 @@ module Spree
           message.to = Config[:intercept_email]
         end
 
-        if Config[:mail_bcc].present?
-          message.bcc ||= Config[:mail_bcc]
-        end
+        message.bcc ||= Config[:mail_bcc] if Config[:mail_bcc].present?
       end
     end
   end

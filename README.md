@@ -1,6 +1,6 @@
 # Spree Mail Settings
 
-[![Build Status](https://travis-ci.org/spree-contrib/spree_mail_settings.svg?branch=2-3-stable)](https://travis-ci.org/spree-contrib/spree_mail_settings)
+[![Build Status](https://travis-ci.org/spree-contrib/spree_mail_settings.svg?branch=2-4-stable)](https://travis-ci.org/spree-contrib/spree_mail_settings)
 [![Code Climate](https://codeclimate.com/github/spree-contrib/spree_mail_settings/badges/gpa.svg)](https://codeclimate.com/github/spree-contrib/spree_mail_settings)
 
 ---
@@ -10,7 +10,7 @@
 Add spree_mail_settings to your `Gemfile`:
 
 ```ruby
-gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings', branch: '2-3-stable'
+gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings', branch: '2-4-stable'
 ```
 
 Run:

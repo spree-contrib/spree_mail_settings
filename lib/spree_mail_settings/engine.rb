@@ -10,7 +10,7 @@ module SpreeMailSettings
       end
     end
 
-    initializer 'spree_mail_settings' do |app|
+    initializer 'spree_mail_settings' do
       ActionMailer::Base.add_delivery_method :spree, Spree::Core::MailMethod
       Spree::Core::MailSettings.init
       Mail.register_interceptor(Spree::Core::MailInterceptor)
