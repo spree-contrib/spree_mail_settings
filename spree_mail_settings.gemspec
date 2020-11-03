@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
 
   spree_version = '>= 3.7.0', '< 5.0'
   s.add_runtime_dependency 'spree_backend', spree_version
+  s.add_runtime_dependency 'spree_core', spree_version
   s.add_runtime_dependency 'spree_auth_devise', spree_version
 
   s.add_development_dependency 'pry-rails'

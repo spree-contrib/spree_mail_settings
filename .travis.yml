@@ -22,6 +22,7 @@ env:
   - DB=postgres
 
 gemfile:
+  - gemfiles/spree_3_7.gemfile
   - gemfiles/spree_4_1.gemfile
   - gemfiles/spree_4_2.gemfile
   - gemfiles/spree_master.gemfile
@@ -32,12 +33,14 @@ jobs:
 
 before_install:
   - mysql -u root -e "GRANT ALL ON *.* TO 'travis'@'%';"
+  - mysql -e 'CREATE DATABASE spree_mail_settings_spree_test;'
 
 before_script:
   - CHROME_MAIN_VERSION=`google-chrome-stable --version | sed -E 's/(^Google Chrome |\.[0-9]+ )//g'`
   - CHROMEDRIVER_VERSION=`curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_MAIN_VERSION"`
   - curl "https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip" -O
   - unzip chromedriver_linux64.zip -d ~/bin
+  - psql -c 'create database spree_mail_settings_spree_test;' -U postgres
 
 script:
   - bundle exec rake test_app
