@@ -2,7 +2,7 @@
 # it works for all email (in theory.)
 RSpec.describe Spree::OrderMailer do
   let!(:store) { create(:store) }
-  let(:order) { Spree::Order.new(email: 'customer@example.com') }
+  let(:order) { Spree::Order.new(email: 'customer@example.com', store: store) }
   let(:message) { described_class.confirm_email(order) }
 
   before(:all) do
