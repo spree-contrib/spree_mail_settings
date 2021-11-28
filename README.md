@@ -1,3 +1,7 @@
+## ⚠️ Deprecation notice ⚠️
+
+This extension is deprecated and not maintained anymore. Please use standard [Rails Action Mailer configuration](https://guides.rubyonrails.org/action_mailer_basics.html#action-mailer-configuration) instead. Also [Spree Starter](https://github.com/spree/spree_starter) comes with Sendgrid pre-configured.
+
 # Spree Mail Settings
 
 [![Build Status](https://travis-ci.org/spree-contrib/spree_mail_settings.svg?branch=master)](https://travis-ci.org/spree-contrib/spree_mail_settings)
