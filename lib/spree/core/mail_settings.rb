@@ -57,7 +57,7 @@ module Spree
       end
 
       def secure_connection?
-        Config.secure_connection_type == 'TLS'
+        Config.secure_connection_type != 'None'
       end
     end
   end
